@@ -46,7 +46,18 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-areas: /* creating area*/
+      "hi hi hi hi yo yo yo yo"
+      "hi hi hi hi yo yo yo yo"
+      "hi hi hi hi yo yo yo yo"
+      "hi hi hi hi yo yo yo yo"
     }
+
+/* styling with the name area not with the line */
+  .item3 {
+    grid-column: hi-start / yo-end;
+    grid-row: yo-end;
+  }
   </style>
 </body>
 

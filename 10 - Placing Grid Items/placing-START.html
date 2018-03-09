@@ -20,7 +20,7 @@
     <div class="item item8">8</div>
     <div class="item item8">💩</div>
     <div class="item item9">9</div>
-    <div class="item item10">10</div>
+    <div class="item item10">hello</div>
     <div class="item item11">11</div>
     <div class="item item12">12</div>
     <div class="item item13">13</div>
@@ -48,6 +48,25 @@
       display: grid;
       grid-gap: 20px;
       grid-template-columns: repeat(5, 1fr);
+    }
+
+    .item10 {
+      /* grid-column: span 2;or */
+      /* grid-column-start: 2; */
+      /* grid-column-end: 5; */
+      grid-column: 2 / 5; /*start and stop*/
+      background: rgb(238, 236, 223);
+    }
+
+    .item23 {
+      background: forestgreen;
+      grid-column: -3/-1;
+    }
+
+    .item30 {
+      background: rgb(240, 4, 4);
+      grid-column: -5/-1;
+      grid-row: 8/5;
     }
   </style>
 </body>

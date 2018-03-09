@@ -14,8 +14,8 @@
     <div class="itm itm2">2</div>
     <div class="itm itm3">3</div>
     <div class="itm itm4">4</div>
-    <div class="itm itm5">5</div>
-    <div class="itm itm6">6</div>
+    <div class="itm itm5">five five five</div>
+    <div class="itm itm6">Won Maung Thein</div>
     <div class="itm itm7">7</div>
     <div class="itm itm8">8</div>
     <div class="itm itm9">9</div>
@@ -70,7 +70,26 @@
     .container {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: repeat(10, 1fr);
+      border: 10px solid var(--yellow);
+      grid-template-columns: repeat(5, 100px);
+      grid-template-rows: repeat(5, 100px);
+      /* justify-items: end;
+      align-items: center; */
+      place-items: stretch stretch;
+      /* justify-content:flex-end; */
+      /* justify-content: space-around; */
+      justify-content: space-between;
+    }
+
+    .itm {
+      background: white;
+    }
+
+    .itm5{
+      background: rgb(245, 84, 9) !important;
+      justify-self: center;
+      align-self: center;
+
     }
   </style>
 </body>
